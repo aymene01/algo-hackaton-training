@@ -9,5 +9,4 @@ max_heap.insert(30)
 
 print(max_heap.extract_max())
 
-
 print(heap_sort([1, 2, 1, 90, 34, 100]))
