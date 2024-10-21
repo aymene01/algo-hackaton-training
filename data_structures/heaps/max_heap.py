@@ -44,5 +44,10 @@ class MaxHeap:
     def is_empty(self):
         return len(self.heap) == 0
     
-    def heapify(self):
-        ...
+    def heapify(self, arr):
+        self.heap = arr[:]
+        n = len(self.heap)
+
+        for i in range(n // 2 - 1, -1, -1):
+            self._bubble_down(i)
+        

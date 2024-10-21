@@ -46,7 +46,11 @@ class MinHeap:
     
     def heapify(self, arr):
         self.heap = arr[:]
+        n = len(self.heap)
 
+        for i in range(n // 2 - 1, -1, -1):
+            self._bubble_down(i)
+        
 
         ...
 
