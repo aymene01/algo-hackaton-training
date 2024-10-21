@@ -1,14 +1,9 @@
-from data_structures.stack import MinStack
+from data_structures.heaps.max_heap import MaxHeap
 
-stack = MinStack()
-stack.push(10)
-stack.push(20)
-stack.push(1)
-stack.push(19)
-stack.push(13)
+max_heap = MaxHeap()
 
-print(stack.get_min())
-print(stack.peek())
-print(stack.pop())
-print(stack.get_max())
+max_heap.insert(10)
+max_heap.insert(1)
+max_heap.insert(30)
 
+print(max_heap.extract_max())
