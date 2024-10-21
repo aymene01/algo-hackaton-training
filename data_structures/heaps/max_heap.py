@@ -37,6 +37,12 @@ class MaxHeap:
         if smallest != idx:
             self.heap[smallest], self.heap[idx] = self.heap[idx], self.heap[smallest]
             self._bubble_down(smallest)
+        
+    def peek(self):
+        return self.heap[0] if self.heap else None
+
+    def is_empty(self):
+        return len(self.heap) == 0
     
     def heapify(self):
         ...
